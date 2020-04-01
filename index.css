@@ -1,0 +1,132 @@
+body {
+  background-color: #c7f0f0;
+}
+.heading {
+  border: 2px solid black;
+  font-family: "Chivo", sans-serif;
+  background-color: #4242b4;
+  color: brown;
+  padding: 10px;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 3px;
+}
+
+section {
+  width: 85%;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+}
+.FirstImg {
+  margin-top: 20px;
+  width: 90%;
+  height: 60%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: "Chivo", sans-serif;
+  border: 2px solid blue;
+  text-align: center;
+  background-color: cadetblue;
+  width: 30%;
+  float: left;
+}
+.first-row,
+.second-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  float: left;
+}
+
+.sidebar {
+  font-family: "Chivo", sans-serif;
+  width: 15%;
+  background: hsl(253, 49%, 66%);
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 15px;
+}
+.imagesidebar {
+  display: flex;
+  width: 80%;
+  top: 0px;
+  padding: 18px;
+}
+
+footer {
+  display: flex;
+  background-color: slategrey;
+  position: relative;
+  width: 100%;
+  padding: 5px;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+/* @media screen and (min-width: 760px) and(max-width:1294px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+  }
+
+  .first-row {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+  }
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 20%;
+  }
+  .sidebar-content {
+    flex-direction: row;
+  }
+  .imagesidebar {
+    display: flex;
+    width: 30%;
+    height: 80%;
+  }
+}
+@media (min-width: 320px) and(max-width:759px) {
+  .main {
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .first-row {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 20%;
+  }
+  .sidebar-content {
+    flex-direction: row;
+  }
+} */
