@@ -34,14 +34,12 @@ section {
   text-align: center;
   background-color: cadetblue;
   width: 30%;
-  float: left;
 }
 .first-row,
 .second-row {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  float: left;
 }
 
 .sidebar {
@@ -73,7 +71,24 @@ footer {
   justify-content: center;
   margin-bottom: 0px;
 }
-
+@media screen and (max-width: 1000px) {
+  .main {
+    display: block;
+  }
+  .sidebar {
+    display: flex;
+    width: 100%;
+  }
+  .sidebar-content {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+  }
+  .imagesidebar {
+    width: 20%;
+    height: 80%;
+  }
+}
 /* @media screen and (min-width: 760px) and(max-width:1294px) {
   .container {
     display: flex;
