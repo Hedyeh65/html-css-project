@@ -22,7 +22,7 @@ section {
 .FirstImg {
   margin-top: 20px;
   width: 90%;
-  height: 60%;
+  height: auto;
 }
 
 .container {
@@ -34,11 +34,12 @@ section {
   text-align: center;
   background-color: cadetblue;
   width: 30%;
+  margin-top: 10px;
 }
-.first-row,
-.second-row {
+.first-row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 10px;
 }
 
@@ -60,6 +61,7 @@ section {
   width: 80%;
   top: 0px;
   padding: 18px;
+  height: auto;
 }
 
 footer {
@@ -71,77 +73,91 @@ footer {
   justify-content: center;
   margin-bottom: 0px;
 }
-@media screen and (max-width: 1000px) {
+
+@media (min-width: 320px) and (max-width: 767px) {
   .main {
-    display: block;
-  }
-  .sidebar {
-    display: flex;
     width: 100%;
-  }
-  .sidebar-content {
     display: flex;
     flex-direction: row;
-    height: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
   }
-  .imagesidebar {
-    width: 20%;
-    height: 80%;
-  }
-}
-/* @media screen and (min-width: 760px) and(max-width:1294px) {
+
   .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 10%;
+    width: 100%;
+    margin-top: 10px;
   }
-
   .first-row {
     display: flex;
     padding: 10px;
     flex-direction: column;
+    margin-bottom: -20px;
   }
+
   .sidebar {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    font-family: "Chivo", sans-serif;
     width: 100%;
-    height: 20%;
+    background: hsl(253, 49%, 66%);
+    margin-top: 5vh;
   }
-  .sidebar-content {
-    flex-direction: row;
-  }
+
   .imagesidebar {
-    display: flex;
-    width: 30%;
-    height: 80%;
+    width: 80%;
+    height: 40vh;
+    margin: 0 auto;
+  }
+
+  footer {
+    background-color: slategrey;
+    width: 93vw;
+    margin-right: 10%;
   }
 }
-@media (min-width: 320px) and(max-width:759px) {
+@media (min-width: 768px) and (max-width: 1224px) {
   .main {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
   }
+
   .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
     margin-top: 10px;
-    width: 100%;
   }
+
   .first-row {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 300px 300px;
   }
+
   .sidebar {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    font-family: "Chivo", sans-serif;
     width: 100%;
-    height: 20%;
+    background: hsl(253, 49%, 66%);
+    margin-top: 5vh;
   }
-  .sidebar-content {
-    flex-direction: row;
+
+  .imagesidebar {
+    width: 40%;
+    height: 30vh;
+    margin: 0 auto;
   }
-} */
+
+  footer {
+    background-color: slategrey;
+    width: 96vw;
+    margin-right: 10%;
+  }
+}
